@@ -16,26 +16,26 @@ class TGFXTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       validator: validator,
-      maxLines: maxLines ?? null,
+      maxLines: maxLines,
       decoration: InputDecoration(
         hintText: hintText ?? "",
         filled: true,
         fillColor: Colors.white,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0), // Set the border radius
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: Color(0xFFD0D5DD), // Set the border color
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0),
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: Color(0xFFD0D5DD), // Set the border color
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8.0),
-          borderSide: BorderSide(
+          borderSide: const BorderSide(
             color: Color(0xFFD0D5DD), // Set the border color
           ),
         ),
