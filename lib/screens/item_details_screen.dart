@@ -84,7 +84,7 @@ class ItemDetailsScreen extends StatelessWidget {
                 const Text(
                   "How do you create compelling presentations that wow your colleagues and impress your managers?",
                   style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 16,
                     fontWeight: FontWeight.w400,
                     color: Color(0xff475467),
                   ),

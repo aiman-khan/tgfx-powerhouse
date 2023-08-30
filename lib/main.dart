@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:tgfx/blocs/item_details/item_details_cubit.dart';
 import 'package:tgfx/blocs/marketplace/marketplace_cubit.dart';
 import 'package:tgfx/screens/home.dart';
@@ -21,9 +22,8 @@ class MyApp extends StatelessWidget {
       title: 'RGFX',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: GoogleFonts.interTextTheme(),
       ),
-      home: const MarketplaceScreen(), // Set your main screen here
-
       builder: (_, __) {
         return MultiBlocProvider(
           providers: [
@@ -38,10 +38,10 @@ class MyApp extends StatelessWidget {
             ),
             BlocProvider(
               create: (BuildContext context) => PageBloc(),
-              child: PageViewScreen(),
+              child: HomeScreen(),
             ),
           ],
-          child: PageViewScreen(),
+          child: HomeScreen(),
         );
       },
     );

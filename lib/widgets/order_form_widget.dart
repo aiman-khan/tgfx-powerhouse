@@ -149,7 +149,7 @@ class OrderFormWidget extends StatelessWidget {
 
         /// [Price]
         const Text(
-          "\$10",
+          "\$10.00",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w600,

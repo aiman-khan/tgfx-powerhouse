@@ -9,14 +9,14 @@ import '../blocs/page/page_state.dart';
 import '../models/item_model.dart';
 import '../widgets/tgfx_appbar.dart';
 
-class PageViewScreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
+  HomeScreen({super.key});
+
   final List<Widget> pages = [
     const MarketplaceScreen(),
     ItemDetailsScreen(item: Item(title: "", description: "", price: 1)),
     const OrderSuccessScreen()
   ];
-
-  PageViewScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

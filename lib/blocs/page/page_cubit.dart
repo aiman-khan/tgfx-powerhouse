@@ -10,8 +10,8 @@ class PageBloc extends Cubit<PageBlocState> {
   void navigateToPage(int pageIndex) {
     pageController.animateToPage(
       pageIndex,
-      duration: const Duration(milliseconds: 400),
-      curve: Curves.easeInOut,
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.linear,
     );
     emit(PageBlocState(pageIndex));
   }
